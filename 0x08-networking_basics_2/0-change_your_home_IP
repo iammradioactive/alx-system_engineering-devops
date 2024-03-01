@@ -2,5 +2,5 @@
 #configure an ubuntu server to resolve localhost and facebook.com to a different ip
 
 cp /etc/hosts ~/hosts.new
-sed -i 's/127.*$/127.0.0.2 localhost\n8.8.8.8 facebook.com/' ~hosts.new
-cp -f ~hosts.new /etc/hosts
+sed -i 's/127.*$/127.0.0.2 localhost\n8.8.8.8 facebook.com/' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
